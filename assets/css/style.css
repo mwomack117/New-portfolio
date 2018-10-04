@@ -71,7 +71,7 @@ h2 {
  border-bottom: 2px solid #ccc; 
  font-family: 'Georgia', Times, "Times New Roman", serif;
  font-size: 1.6em;
- padding: .5em 0;
+ padding: .5em 0 0 0; 
 }
 
 #about-me, form, #portfolio {
@@ -102,30 +102,56 @@ p {
 /* General content end */
 
 /* portfolio/work section */
-.images {
-  width: 224px;
-  height: 175px;
-}
-
-.boxes {
-  display: inline-block;
-  margin: 15px;
-  width: 224px;
-  height: 175px;
+.projects-wrapper {
+  text-align: center;
 }
 
 .banner {
   background-color: #a0d0f8;
   letter-spacing: 1.8px;
-  opacity: 0.85;
+  opacity: 0;
   color: #ee5050;
   text-align: center;
   width: 224px;
   height: 40px;
   font-size: 20px;
   line-height: 50px;
+  position: absolute;
+  top: 5.9em;
+}
+.images {
+  width: 224px;
+  height: 175px;
+  border-radius: 5px;
+} 
+
+.images:hover ~ .banner {
+  background-color: #ee5050;
+  color: #a0d0f8;
+  opacity:1;
+  transition: .5s;
+  font-size: 21px;
+}
+
+.banner:hover {
+  background-color: #ee5050;
+  color: #a0d0f8;
+  opacity:1;
+  transition: .5s;
+  font-size: 21px;
+}
+
+.boxes {
   position: relative;
-  bottom: 70px;
+  display: inline-block;
+  margin: 15px;
+  width: 224px;
+  height: 175px;
+  border-radius: 5px;
+}
+
+.projects-wrapper {
+  text-align: center;
 }
 
 /* Footer Section */
@@ -177,7 +203,6 @@ textarea {
 @media screen and (max-width: 980px) {
   .container {
       width: 60%;
-      /* margin-left: 45px; */
       margin: 0 auto;
       margin-top: 25px;
       overflow: hidden;
@@ -250,6 +275,7 @@ textarea {
       height: auto;
       width: 75%;
       margin: 0 auto;
+      margin-bottom: 10px;
       padding: 0;
   }
 
@@ -258,8 +284,18 @@ textarea {
       height: auto;
   }
 
-  .boxes p {
+  .banner {
       width: 100%;
       font-size: 24px;
+      opacity: 0;
   }
+
+  .images:hover ~ .banner {
+    background-color: #ee5050;
+    color: #a0d0f8;
+    opacity:1;
+    transition: .5s;
+    font-size: 26px;
+  }
+
 }
