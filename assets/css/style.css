@@ -109,7 +109,7 @@ p {
 .banner {
   background-color: #a0d0f8;
   letter-spacing: 1.8px;
-  opacity: 0;
+  opacity: 0.8;
   color: #ee5050;
   text-align: center;
   width: 224px;
@@ -162,10 +162,11 @@ p {
   width: 100%;
   bottom: 0;
   border-top: 7px solid #ee5050;
+  padding-bottom: 5px;
 }
 
 .footer p {
-  color: #ee5050;
+  color:grey;
 }
 
 /* Contact start */
@@ -190,10 +191,16 @@ textarea {
 }
 
 .btn-primary {
-  background-color: #4aaaa5;
-  color: white;
+  background-color: #a0d0f8;
+  color: black;
   font-size: 14px;
   padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #ee5050;
+  transition: .5s;
 }
 /* Contact end */
 
@@ -202,7 +209,7 @@ textarea {
 
 @media screen and (max-width: 980px) {
   .container {
-      width: 60%;
+      width: 70%;
       margin: 0 auto;
       margin-top: 25px;
       overflow: hidden;
@@ -287,10 +294,18 @@ textarea {
   .banner {
       width: 100%;
       font-size: 24px;
-      opacity: 0;
+      opacity: 0.8;
   }
 
   .images:hover ~ .banner {
+    background-color: #ee5050;
+    color: #a0d0f8;
+    opacity:1;
+    transition: .5s;
+    font-size: 26px;
+  }
+
+  .banner:hover {
     background-color: #ee5050;
     color: #a0d0f8;
     opacity:1;
