@@ -50,7 +50,7 @@ ul li {
 }
 
 ul a {color: grey}
-ul a:hover {color: #ee5050}
+ul a:hover {color: #C13B53}
 
 /* Header and Nav end */
 
@@ -67,7 +67,7 @@ ul a:hover {color: #ee5050}
 
 
 h2 {
- color: #a0d0f8;
+ color: #C13B53;
  border-bottom: 2px solid #ccc; 
  font-family: 'Georgia', Times, "Times New Roman", serif;
  font-size: 1.6em;
@@ -107,10 +107,10 @@ p {
 }
 
 .banner {
-  background-color: #a0d0f8;
+  background-color: #FFF0DF;
   letter-spacing: 1.8px;
   opacity: 0.8;
-  color: #ee5050;
+  color: #C13B53;
   text-align: center;
   width: 224px;
   height: 40px;
@@ -126,16 +126,16 @@ p {
 } 
 
 .images:hover ~ .banner {
-  background-color: #ee5050;
-  color: #a0d0f8;
+  background-color: #C13B53;
+  color: #FFF0DF;
   opacity:1;
   transition: .5s;
   font-size: 21px;
 }
 
 .banner:hover {
-  background-color: #ee5050;
-  color: #a0d0f8;
+  background-color: #C13B53;
+  color: #FFF0DF;
   opacity:1;
   transition: .5s;
   font-size: 21px;
@@ -156,12 +156,12 @@ p {
 
 /* Footer Section */
 .footer {
-  background-color: #a0d0f8;
+  background-color: #232639;
   position: fixed;
   text-align: center;
   width: 100%;
   bottom: 0;
-  border-top: 7px solid #ee5050;
+  border-top: 7px solid #C1A077;
   padding-bottom: 5px;
 }
 
