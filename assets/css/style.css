@@ -104,6 +104,8 @@ p {
 /* portfolio/work section */
 .projects-wrapper {
   text-align: center;
+  
+  
 }
 
 .banner {
@@ -148,10 +150,6 @@ p {
   width: 224px;
   height: 175px;
   border-radius: 5px;
-}
-
-.projects-wrapper {
-  text-align: center;
 }
 
 /* Footer Section */
